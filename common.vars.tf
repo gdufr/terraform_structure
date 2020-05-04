@@ -8,9 +8,9 @@ variable "region" {
 variable "default_tags" {
   default = {
     "terraform" = "true"
-    "Project"   = "cloud_native_search"
-    "createdBy" = "Accenture Architecture"
-    "Name"      = "Cloud Native Search"
+    "Project"   = "terraform_structure"
+    "createdBy" = "Glenn Dufresne"
+    "Name"      = "Terraform Structue Showcase"
   }
 }
 
@@ -19,48 +19,41 @@ variable "env" {
   default = {
     dev  = "dev"
     test = "test"
-    qa   = "qa"
   }
 }
 
 variable "account_name" {
   default = {
-    dev  = "nonprod"
+    dev  = "dev"
     test = "test"
-    qa   = "qa"
   }
 }
 
 variable "account_number" {
   default = {
-    dev = "123456789012"
-
-    #    test = ""
-    #    qa   = ""
+    dev = "598579485202"
+    test = "598579485202"
   }
 }
 
 variable "state_bucket_name" {
   default = {
-    dev  = "terraform-state-lock-cloud-native-search-dev"
-    test = "terraform-state-lock-cloud-native-search-test"
-    qa   = "terraform-state-lock-cloud-native-search-qa"
+    dev  = "terraform-state-lock-dev"
+    test = "terraform-state-lock-test"
   }
 }
 
 variable "application_shared_bucket_name" {
   default = {
-    dev  = "cloud-native-search-dev"
-    test = "cloud-native-search-test"
-    qa   = "cloud-native-search-qa"
+    dev  = "terraform-structure-dev"
+    test = "terraform-structure-test"
   }
 }
 
 /* === API Gateways === */
 variable "api_gateway_title" {
   default = {
-    dev  = "search_apigw_dev"
-    test = "search_apigw_test"
-    qa   = "search_apigw_qa"
+    dev  = "apigw_dev"
+    test = "apigw_test"
   }
 }
